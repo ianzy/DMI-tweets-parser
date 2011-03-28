@@ -1,0 +1,59 @@
+<h1>New tweet</h1>
+
+<% form_for(@tweet) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :tweet_id %><br />
+    <%= f.text_field :tweet_id %>
+  </p>
+  <p>
+    <%= f.label :text %><br />
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.label :to_user %><br />
+    <%= f.text_field :to_user %>
+  </p>
+  <p>
+    <%= f.label :to_user_id %><br />
+    <%= f.text_field :to_user_id %>
+  </p>
+  <p>
+    <%= f.label :from_user %><br />
+    <%= f.text_field :from_user %>
+  </p>
+  <p>
+    <%= f.label :from_user_id %><br />
+    <%= f.text_field :from_user_id %>
+  </p>
+  <p>
+    <%= f.label :iso_language_code %><br />
+    <%= f.text_field :iso_language_code %>
+  </p>
+  <p>
+    <%= f.label :tweet_created_at %><br />
+    <%= f.datetime_select :tweet_created_at %>
+  </p>
+  <p>
+    <%= f.label :profile_image_url %><br />
+    <%= f.text_field :profile_image_url %>
+  </p>
+  <p>
+    <%= f.label :recent_retweets %><br />
+    <%= f.text_field :recent_retweets %>
+  </p>
+  <p>
+    <%= f.label :hast_tag %><br />
+    <%= f.text_field :hast_tag %>
+  </p>
+  <p>
+    <%= f.label :category_id %><br />
+    <%= f.text_field :category_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', tweets_path %>

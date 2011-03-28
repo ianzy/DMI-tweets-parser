@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Tweets: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'style' %>
+</head>
+<body>
+<!-- Header -->
+<div id="header">
+  <div class="shell">
+    <div id="cmudmi">
+      <h1 id="cmu">Carnegie Mellon University</h1>
+      <h1 id="dmi">Disaster Management Initiative</h1>
+    </div>
+      <div id="navigation">
+        <ul>
+          <li><a href="#" class="active"><span>Tweets</span></a></li>
+          <li><a href="#"><span>Categories</span></a></li>
+          <li><a href="#"><span>Control panel</span></a></li>
+          <li><a href="#"><span>Search</span></a>
+       
+          </li>
+          <li><a href="#"><span>Contact Us</span></a>
+          </li>
+        </ul>
+        <!-- <a href="#" class="buy-now">Map</a> -->
+      </div>
+      <div class="cl">&nbsp;</div>
+      <!-- <div class="search">
+                    <form action="#" method="post">
+                            <span class="field">
+                                    <input type="text" class="blink" value="Search" title="Search" />
+                            </span>
+                            <input type="submit" class="search-btn notext" value="Submit" />
+                    </form>
+            </div> -->
+  </div>
+</div>
+<!-- End Header -->
+<!-- Main -->
+<div id="main">
+	<div class="shell">
+          <%= yield %>
+          <div class="cl">&nbsp;</div>
+	</div>
+</div>
+<!-- End Main -->
+<!-- Footer -->
+<div id="footer">
+	<div class="shell">
+		<p class="left">DMISV</p>
+		<p class="right">
+			<a href="#">Tweets</a>
+			<span>|</span>
+		    <a href="#">Categories</a>
+		    <span>|</span>
+		    <a href="#">Control panel</a>
+		    <span>|</span>
+		    <a href="#">Search</a>
+		    <span>|</span>
+		    <a href="#">Contact Us</a>
+	    </p>
+	    <div class="cl">&nbsp;</div>
+	</div>
+</div>
+<!-- Footer -->
+</body>
+</html>
