@@ -2,7 +2,7 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.xml
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb

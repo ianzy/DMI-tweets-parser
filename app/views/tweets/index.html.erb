@@ -1,42 +1,24 @@
-<h1>Listing tweets</h1>
-
-<table>
-  <tr>
-    <th>Tweet</th>
-    <th>Text</th>
-    <th>To user</th>
-    <th>To user</th>
-    <th>From user</th>
-    <th>From user</th>
-    <th>Iso language code</th>
-    <th>Tweet created at</th>
-    <th>Profile image url</th>
-    <th>Recent retweets</th>
-    <th>Hast tag</th>
-    <th>Category</th>
-  </tr>
-
 <% @tweets.each do |tweet| %>
-  <tr>
-    <td><%=h tweet.tweet_id %></td>
-    <td><%=h tweet.text %></td>
-    <td><%=h tweet.to_user %></td>
-    <td><%=h tweet.to_user_id %></td>
-    <td><%=h tweet.from_user %></td>
-    <td><%=h tweet.from_user_id %></td>
-    <td><%=h tweet.iso_language_code %></td>
-    <td><%=h tweet.tweet_created_at %></td>
-    <td><%=h tweet.profile_image_url %></td>
-    <td><%=h tweet.recent_retweets %></td>
-    <td><%=h tweet.hast_tag %></td>
-    <td><%=h tweet.category_id %></td>
-    <td><%= link_to 'Show', tweet %></td>
-    <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
-    <td><%= link_to 'Destroy', tweet, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<div class="tweet">
+	<div class="profile-img">
+		<%=tag("img", { :src => tweet.profile_image_url }, false) %>
+	</div>
+	<div class="tweet-content">
+	<p>
+		<%=h tweet.from_user %>
+	</p>
+	<p>
+		<%=h tweet.text %>
+	</p>
+		<%=h tweet.id %> -- <%=h tweet.text_hash %>
+		<div class="tweet-control">
+			<%= link_to 'Show', tweet %> | 
+    		<%= link_to 'Edit', edit_tweet_path(tweet) %> | 
+    		<%= link_to 'Destroy', tweet, :confirm => 'Are you sure?', :method => :delete %>
+		</div>
+	</div>
+</div>
 <% end %>
-</table>
-
 <br />
 
 <%= link_to 'New tweet', new_tweet_path %>

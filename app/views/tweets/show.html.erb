@@ -1,21 +1,11 @@
 <p>
   <b>Tweet:</b>
-  <%=h @tweet.tweet_id %>
+  <%=h @tweet.id %>
 </p>
 
 <p>
   <b>Text:</b>
   <%=h @tweet.text %>
-</p>
-
-<p>
-  <b>To user:</b>
-  <%=h @tweet.to_user %>
-</p>
-
-<p>
-  <b>To user:</b>
-  <%=h @tweet.to_user_id %>
 </p>
 
 <p>
@@ -34,29 +24,10 @@
 </p>
 
 <p>
-  <b>Tweet created at:</b>
-  <%=h @tweet.tweet_created_at %>
-</p>
-
-<p>
   <b>Profile image url:</b>
   <%=h @tweet.profile_image_url %>
 </p>
 
-<p>
-  <b>Recent retweets:</b>
-  <%=h @tweet.recent_retweets %>
-</p>
-
-<p>
-  <b>Hast tag:</b>
-  <%=h @tweet.hast_tag %>
-</p>
-
-<p>
-  <b>Category:</b>
-  <%=h @tweet.category_id %>
-</p>
 
 
 <%= link_to 'Edit', edit_tweet_path(@tweet) %> |
