@@ -80,4 +80,29 @@ class TweetsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def detail
+    tweet = Tweet.find_by_parsed.first
+    @tweet = Tweet.new(tweet[1])
+    @categories = Category.find :all
+  end
+  
+  def categorize
+    @tweet = Tweet.find(params[:id])
+    @tweet.people_name = params[:people_name]
+    @tweet.address = params[:address]
+    @tweet.category = params[:category][:category_id]
+    @tweet.parsed = "human_parsed"
+    
+    respond_to do |format|
+      if @tweet.save
+        format.html { redirect_to(detail_tweets_path, :notice => 'Tweet was successfully updated.') }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "detail" }
+        format.xml  { render :xml => @tweet.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
 end

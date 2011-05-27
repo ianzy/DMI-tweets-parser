@@ -1,0 +1,37 @@
+<div class="detail-tweet">
+	<div class="profile-img">
+		<%=tag("img", { :src => @tweet.profile_image_url }, false) %>
+	</div>
+	<p>
+	  <b>From user:</b>
+	  <%=h @tweet.from_user %>
+	</p>
+	<p>
+  		<b>Tweet:</b>
+  		<%=h @tweet.id %>
+	</p>
+	<p>
+  		<b>Text:</b>
+  		<%=h @tweet.text %>
+	</p>
+	<br />
+<% form_tag categorize_tweet_path(@tweet.id) do %>
+  <p>
+    <%= label_tag :people_name %><br />
+    <%= text_field_tag :people_name, nil, :class=>"fieldclass" %>
+  </p>
+  <p>
+    <%= label_tag :address %><br />
+    <%= text_field_tag :address, nil, :class=>"fieldclass" %>
+  </p>
+  <p>
+	<%= label_tag :category %><br />
+  	<%= select("category", "category_id", @categories.map {|c| [c.name,c.id]}, {}, :class=>"selectbox") %>
+  </p>
+  <p>
+    <%= submit_tag 'Categorize', :class=>"button" %>
+  </p>
+<% end %>
+</div>
+
+<%= link_to "next"%>

@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :categories
-
-  map.resources :tweets
+  
+  map.resources :tweets, :member => { :categorize => :post }, :collection=>{:detail => :get}
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -18,7 +18,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with options:
   #   map.resources :products, :member => { :short => :get, :toggle => :post }, :collection => { :sold => :get }
-
+  
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
   

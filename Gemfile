@@ -5,6 +5,7 @@ gem 'bundler'
 gem "sqlite3-ruby", :require => "sqlite3"
 gem 'mysql'
 gem 'aws-sdb'
+gem 'raws'
 
 # bundler requires these gems in all environments
 # gem "nokogiri", "1.4.2"

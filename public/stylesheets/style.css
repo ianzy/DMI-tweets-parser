@@ -118,3 +118,44 @@ h1#logo a { display: block; height: 90px; background: url(../images/dmilogo.jpg)
 .profile-img {float:left; margin: 5px;}
 .tweet-content {font-size:14px;}
 .tweet-control {font-size:12px;}
+
+.detail-tweet {font-size:18px;}
+
+.fieldclass {
+    border: 1px solid #C8C8C8;
+    color: #333;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 8px;
+    width: 300px;
+}
+
+.areaclass {
+    border: 1px solid #C8C8C8;
+    color: #333;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 8px;
+    width: 500px;
+}
+
+.fieldclass, .button { -moz-border-radius:4px; -webkit-border-radius:4px; }
+input, textarea, select { font-family: Verdana, sans-serif; font-size:13px; }
+
+.button { background:#eee; border:solid 1px #b1a874; color:#7f7f7f; font-size:13px; padding:6px 6px 6px 6px; cursor:pointer; line-height:14px !important; }
+.button:hover { color:#333; border-color:#857b42; }
+
+.buttons .button{ margin-left:3px;}
+.selectbox
+{
+  margin: 0px 5px 10px 0px;
+  padding-left:2px;
+  font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size:1em;/* Resize Font*/
+  width : 190px; /* Resize Width */
+  display : block;
+  text-align:left;
+  cursor: pointer;
+  border:1px solid #D1E4F6;
+  color:#333;
+}

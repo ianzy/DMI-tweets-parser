@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.xml
   def index
-    @categories = Category.all
+    @categories = Category.find(:all)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,6 +40,8 @@ class CategoriesController < ApplicationController
   # POST /categories
   # POST /categories.xml
   def create
+    params[:category][:name] = params[:category][:new_name]
+    params[:category].delete :new_name 
     @category = Category.new(params[:category])
 
     respond_to do |format|
