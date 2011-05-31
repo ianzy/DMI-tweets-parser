@@ -82,7 +82,7 @@ class TweetsController < ApplicationController
   end
   
   def detail
-    tweet = Tweet.find_by_parsed.first
+    tweet = Tweet.get_random_unparsed_tweet
     @tweet = Tweet.new(tweet[1])
     @categories = Category.find :all
   end
@@ -95,10 +95,14 @@ class TweetsController < ApplicationController
     @tweet.parsed = "human_parsed"
     
     respond_to do |format|
-      if @tweet.save
-        format.html { redirect_to(detail_tweets_path, :notice => 'Tweet was successfully updated.') }
-        format.xml  { head :ok }
+      # need to be refactored
+      if @tweet.validate
+        if @tweet.save
+          format.html { redirect_to(detail_tweets_path, :notice => 'Tweet was successfully updated.') }
+          format.xml  { head :ok }
+        end
       else
+        @categories = Category.find :all
         format.html { render :action => "detail" }
         format.xml  { render :xml => @tweet.errors, :status => :unprocessable_entity }
       end

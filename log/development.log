@@ -4705,3 +4705,1170 @@ ActiveResource::TimeoutError (execution expired):
 Rendered rescues/_trace (38.6ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (83.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (31.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:49:03) [GET]
+
+TypeError (can't convert String into Integer):
+  app/models/tweet.rb:25:in `[]'
+  app/models/tweet.rb:25:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (4.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:50:07) [GET]
+
+TypeError (can't convert String into Integer):
+  app/models/tweet.rb:25:in `[]'
+  app/models/tweet.rb:25:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:50:44) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:50:51) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:51:04) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (131.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:51:08) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:52:20) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:52:23) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:52:37) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.9ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:53:02) [GET]
+
+Errno::ECONNREFUSED (Connection refused - connect(2)):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `initialize'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `open'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:53:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/timeout.rb:101:in `timeout'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:560:in `connect'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:553:in `do_start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:542:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:1035:in `request'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/net/http.rb:772:in `get'
+  app/controllers/tweets_controller.rb:87:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:55:22) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2054ms (View: 103, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:55:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1418ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:55:30) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1535ms (View: 4, DB: 1) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:55:33) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1433ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:56:24) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1413ms (View: 6, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:56:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1574ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 15:56:29) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1429ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 16:11:23) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2373ms (View: 9, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 16:11:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1408ms (View: 9, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 16:11:30) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1376ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 16:11:33) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1560ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:47:45) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2444ms (View: 9, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:47:49) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1537ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:47:53) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1410ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:47:56) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1425ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:48:00) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1621ms (View: 5, DB: 3) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:48:05) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1392ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:48:13) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1454ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:48:15) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1364ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-05-30 19:48:18) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"iH1QDEECor1AJsGEY+j3U3iP1SbbwM025Luiwe8R2Zg=", "id"=>"64204874702794753", "people_name"=>""}
+Redirected to http://localhost:3000/tweets/detail
+Completed in 1098ms (DB: 0) | 302 Found [http://localhost/tweets/64204874702794753/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:48:19) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1508ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:53:09) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2137ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:53:14) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1391ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:53:17) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1619ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 19:53:22) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1485ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-05-30 19:57:16) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 20823ms (View: 455, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 20:17:45) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2307ms (View: 86, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 20:17:53) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1615ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 20:22:46) [GET]
+
+NoMethodError (undefined method `validates_presence_of' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (51.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (61.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:28:08) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2646ms (View: 122, DB: 113) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:28:14) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1533ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:28:17) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1360ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:35:56) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 6182ms (View: 12, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-05-30 22:36:04) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"b5VpGhc8l3kBTMI4/wyWBMedr8weQyUIRNN/UzChWb8=", "id"=>"64204488663236609", "people_name"=>""}
+Redirected to http://localhost:3000/tweets/detail
+Completed in 1124ms (DB: 0) | 302 Found [http://localhost/tweets/64204488663236609/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:36:05) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1449ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-05-30 22:37:34) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"b5VpGhc8l3kBTMI4/wyWBMedr8weQyUIRNN/UzChWb8=", "id"=>"64186844845326336", "people_name"=>""}
+Redirected to http://localhost:3000/tweets/detail
+Completed in 1071ms (DB: 0) | 302 Found [http://localhost/tweets/64186844845326336/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:37:35) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1428ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-05-30 22:38:22) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"b5VpGhc8l3kBTMI4/wyWBMedr8weQyUIRNN/UzChWb8=", "id"=>"64204857409667072", "people_name"=>""}
+Redirected to http://localhost:3000/tweets/detail
+Completed in 1404ms (DB: 0) | 302 Found [http://localhost/tweets/64204857409667072/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:38:24) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1869ms (View: 96, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:44:23) [GET]
+
+NoMethodError (undefined method `validates_presence_of' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.2ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:46:13) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (150.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:46:15) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 22:48:41) [GET]
+
+NameError (undefined local variable or method `errors' for Tweet:Class):
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (133.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:05:05) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (68.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:05:07) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:05:09) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:05:12) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:11
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:05:37) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:6
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:05:44) [GET]
+
+NoMethodError (undefined method `schema' for Tweet:Class):
+  app/models/tweet.rb:6
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (170.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:10:02) [GET]
+
+NoMethodError (undefined method `before_save' for Tweet:Class):
+  app/models/tweet.rb:5
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:13:28) [GET]
+
+NoMethodError (undefined method `before_save' for Tweet:Class):
+  app/models/tweet.rb:5
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (152.2ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:13:30) [GET]
+
+NoMethodError (undefined method `before_save' for Tweet:Class):
+  app/models/tweet.rb:5
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:13:31) [GET]
+
+NoMethodError (undefined method `before_save' for Tweet:Class):
+  app/models/tweet.rb:5
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (151.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (4.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:13:33) [GET]
+
+NoMethodError (undefined method `before_save' for Tweet:Class):
+  app/models/tweet.rb:5
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:14:15) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2406ms (View: 15, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:27:56) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1947ms (View: 6, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-05-30 23:28:00) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"b5VpGhc8l3kBTMI4/wyWBMedr8weQyUIRNN/UzChWb8=", "id"=>"64192005525344256", "people_name"=>""}
+Rendering template within layouts/tweets
+Rendering tweets/detail
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map) on line #30 of app/views/tweets/detail.html.erb:
+27:   </p>
+28:   <p>
+29: 	<%= label_tag :category %><br />
+30:   	<%= select("category", "category_id", @categories.map {|c| [c.name,c.id]}, {}, :class=>"selectbox") %>
+31:   </p>
+32:   <p>
+33:     <%= submit_tag 'Categorize', :class=>"button" %>
+
+    app/views/tweets/detail.html.erb:30
+    app/views/tweets/detail.html.erb:18
+    app/controllers/tweets_controller.rb:104:in `categorize'
+    app/controllers/tweets_controller.rb:97:in `categorize'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (70.8ms)
+Rendered rescues/_request_and_response (1.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:28:29) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1412ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-05-30 23:28:33) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"b5VpGhc8l3kBTMI4/wyWBMedr8weQyUIRNN/UzChWb8=", "id"=>"64191574707408897", "people_name"=>""}
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1480ms (View: 6, DB: 0) | 200 OK [http://localhost/tweets/64191574707408897/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-05-30 23:28:51) [POST]
+  Parameters: {"address"=>"fdsjalfdsa", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"b5VpGhc8l3kBTMI4/wyWBMedr8weQyUIRNN/UzChWb8=", "id"=>"64191574707408897", "people_name"=>"resha"}
+Redirected to http://localhost:3000/tweets/detail
+Completed in 927ms (DB: 1) | 302 Found [http://localhost/tweets/64191574707408897/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:28:52) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1376ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:29:41) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1388ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:29:44) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1445ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:29:47) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1432ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:29:49) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1358ms (View: 7, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:30) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1895ms (View: 8, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:35) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1351ms (View: 8, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:37) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1388ms (View: 4, DB: 1) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:39) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1468ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:42) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1341ms (View: 6, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:46) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1448ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:49) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1417ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:52) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1415ms (View: 93, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-05-30 23:30:54) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1390ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]

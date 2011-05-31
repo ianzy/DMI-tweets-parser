@@ -1,3 +1,4 @@
+<%= link_to "Next>>", detail_tweets_path%>
 <div class="detail-tweet">
 	<div class="profile-img">
 		<%=tag("img", { :src => @tweet.profile_image_url }, false) %>
@@ -16,6 +17,7 @@
 	</p>
 	<br />
 <% form_tag categorize_tweet_path(@tweet.id) do %>
+  <%= error_messages_for :tweet %>
   <p>
     <%= label_tag :people_name %><br />
     <%= text_field_tag :people_name, nil, :class=>"fieldclass" %>
@@ -33,5 +35,3 @@
   </p>
 <% end %>
 </div>
-
-<%= link_to "next"%>
