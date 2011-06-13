@@ -1,12 +1,7 @@
-<h1>Editing tweet</h1>
+<h1>New tweet</h1>
 
 <% form_for(@tweet) do |f| %>
   <%= f.error_messages %>
-
-  <p>
-    <%= f.label :id %><br />
-    <%= f.text_field :id %>
-  </p>
   <p>
     <%= f.label :text %><br />
     <%= f.text_area :text %>
@@ -40,9 +35,12 @@
     <%= f.text_field :retweeted %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.label :source %><br />
+    <%= f.text_field :source %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @tweet %> |
 <%= link_to 'Back', tweets_path %>
