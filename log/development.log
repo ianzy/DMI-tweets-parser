@@ -6299,3 +6299,639 @@ Processing TweetsController#index (for 127.0.0.1 at 2011-06-12 23:19:47) [GET]
 Rendering template within layouts/tweets
 Rendering tweets/index
 Completed in 5813ms (View: 56, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (22.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:28) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2074ms (View: 4, DB: 23) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:31) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1578ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:34) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1381ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:36) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1459ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:38) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1434ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:40) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1361ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:42) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1370ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:44) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1402ms (View: 35, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:45) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1403ms (View: 6, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:47) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1467ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:48) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1312ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:50) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1298ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:51) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1429ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:52) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1430ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:54) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1372ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:55) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1332ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:35:59) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1311ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:12) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1434ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:13) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1454ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:15) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1481ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:18) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1370ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:20) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1357ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:22) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1449ms (View: 73, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:24) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1330ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1366ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:29) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1382ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:31) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1313ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:33) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1379ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:36) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1352ms (View: 4, DB: 1) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:37:38) [GET]
+
+RAWS::HTTP::Error (code=400,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InvalidParameterValue</Code><Message>Value (0) for parameter MaxNumberOfItems is invalid. MaxNumberOfItems must be between 1 and 2500</Message><BoxUsage>0.0000137200</BoxUsage></Error></Errors><RequestID>c02ad5a3-8b16-3da8-51cb-7cc68a882792</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:19:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:39:50) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1404ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:42:01) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1400ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:42:04) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1303ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:42:06) [GET]
+
+RAWS::HTTP::Error (code=400,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InvalidParameterValue</Code><Message>Value (0) for parameter MaxNumberOfItems is invalid. MaxNumberOfItems must be between 1 and 2500</Message><BoxUsage>0.0000137200</BoxUsage></Error></Errors><RequestID>fbfb04a0-1403-fc95-9c2a-5ccf532415f1</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:19:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:19) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1461ms (View: 4, DB: 2) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:22) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1402ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:25) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1340ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1382ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:29) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1316ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:31) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1420ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:32) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1397ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:34) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1329ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:36) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1322ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:38) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1316ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:40) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1360ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:42) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1359ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:44) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1324ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:46) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1302ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:48) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1375ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:43:50) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1353ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:46:46) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1460ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:46:49) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1285ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:46:53) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1714ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:46:55) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1291ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:46:57) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1367ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:46:58) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1288ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:46:59) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1360ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:01) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1600ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:02) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1373ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:05) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1369ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:07) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1328ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:09) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1362ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:11) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1285ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:13) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1353ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:16) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1387ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:18) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1333ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:21) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1329ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:23) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1323ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:25) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1346ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:28) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1349ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:30) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1276ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:32) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1291ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:34) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1364ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:36) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1380ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]

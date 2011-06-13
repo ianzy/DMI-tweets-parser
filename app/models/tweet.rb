@@ -15,6 +15,7 @@ class Tweet < ActiveResource::Base
   def self.get_random_unparsed_tweet parsed='none'
     count = RAWS::SDB::Select.new.columns('COUNT(*)').from("db_knowledge").where('parsed = ?', [parsed]).first[1]["Count"].to_i
     offset = rand(count)
+    offset += 1 if offset == 0
     # get the next token
     ret = RAWS::SDB::Adapter.select("select COUNT(*) from `db_knowledge` where parsed = ? limit #{offset}", [['none']], nil)\
       ['SelectResponse']['SelectResult']
