@@ -1,0 +1,16 @@
+<h1>Editing search_term</h1>
+
+<% form_for(@search_term) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @search_term %> |
+<%= link_to 'Back', search_terms_path %>

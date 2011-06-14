@@ -85,12 +85,16 @@ class TweetsController < ApplicationController
     tweet = Tweet.get_random_unparsed_tweet
     @tweet = Tweet.new(tweet[1])
     @categories = Category.find :all
+    @fields = Field.find(:all).map(&:name)
   end
   
   def categorize
     @tweet = Tweet.find(params[:id])
-    @tweet.people_name = params[:people_name]
-    @tweet.address = params[:address]
+    
+    Field.find(:all).map(&:name).each do |field|
+      @tweet.send "#{field}=", params[field.to_sym] if @tweet.respond_to? "#{field}="
+    end
+    
     @tweet.category = params[:category][:category_id]
     @tweet.parsed = "human_parsed"
     
@@ -103,6 +107,7 @@ class TweetsController < ApplicationController
         end
       else
         @categories = Category.find :all
+        @fields = Field.find(:all).map(&:name)
         format.html { render :action => "detail" }
         format.xml  { render :xml => @tweet.errors, :status => :unprocessable_entity }
       end

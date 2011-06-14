@@ -3,7 +3,7 @@ development:
   encoding: utf8
   database: dmisv_development
   username: root
-  password: demo
+  password: ewq321#@!
   socket: /tmp/mysql.sock
 
 # Warning: The database defined as 'test' will be erased and

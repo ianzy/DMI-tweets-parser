@@ -29,17 +29,14 @@ class Tweet < ActiveResource::Base
   # a bad way to validate active resource model....
   def validate
     is_valid = true
-    if people_name.nil? or people_name.empty?
-      errors.add("people_name", "cannot be empty")
-      is_valid = false
-    end
-    if address.nil? or address.empty?
-      errors.add("address", "cannot be empty")
-      is_valid = false
-    end
-    if category.nil? or category.empty?
-      errors.add("category", "cannot be empty")
-      is_valid = false
+    Field.find(:all).map(&:name).each do |field|
+      if self.respond_to? field
+        ret = self.send field
+        if ret.nil? or ret.empty?
+          errors.add(field, "cannot be empty")
+          is_valid = false
+        end
+      end
     end
     return true if is_valid
     false

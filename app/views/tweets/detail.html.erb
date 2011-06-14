@@ -8,8 +8,8 @@
 	  <%=h @tweet.user_name %>
 	</p>
 	<p>
-  		<b>Tweet:</b>
-  		<%=h @tweet.id %>
+  		<b>User Location:</b>
+  		<%=h @tweet.user_location %>
 	</p>
 	<p>
   		<b>Text:</b>
@@ -18,16 +18,16 @@
 	<br />
 <% form_tag categorize_tweet_path(@tweet.id) do %>
   <%= error_messages_for :tweet %>
+  <% @fields.each do |field| %>
+	<% if @tweet.respond_to? "#{field}=" %>
+  		<p>
+			<%= label_tag "#{field}:" %><br />
+    		<%= text_field_tag field.to_sym, nil, :class=>"fieldclass" %>
+  		</p>
+	<% end %>
+  <% end %>
   <p>
-    <%= label_tag :people_name %><br />
-    <%= text_field_tag :people_name, nil, :class=>"fieldclass" %>
-  </p>
-  <p>
-    <%= label_tag :address %><br />
-    <%= text_field_tag :address, nil, :class=>"fieldclass" %>
-  </p>
-  <p>
-	<%= label_tag :category %><br />
+	<%= label_tag "Category:" %><br />
   	<%= select("category", "category_id", @categories.map {|c| [c.name,c.id]}, {}, :class=>"selectbox") %>
   </p>
   <p>

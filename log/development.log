@@ -6935,3 +6935,2041 @@ Processing TweetsController#detail (for 127.0.0.1 at 2011-06-12 23:47:36) [GET]
 Rendering template within layouts/tweets
 Rendering tweets/detail
 Completed in 1380ms (View: 4, DB: 0) | 200 OK [http://localhost/tweets/detail]
+/!\ FAILSAFE /!\  Mon Jun 13 14:46:02 -0700 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+    script/server:3:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Jun 13 14:46:04 -0700 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+    script/server:3:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Jun 13 14:46:07 -0700 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+    script/server:3:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Jun 13 14:46:09 -0700 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+    script/server:3:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Mon Jun 13 14:47:41 -0700 2011
+  Status: 500 Internal Server Error
+  Access denied for user 'root'@'localhost' (using password: YES)
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `real_connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:619:in `connect'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:203:in `initialize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `new'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/mysql_adapter.rb:75:in `mysql_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+    /Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+    script/server:3:in `require'
+    script/server:3
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 14:48:39) [GET]
+
+RAWS::HTTP::Error (code=400,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InvalidQueryExpression</Code><Message>The specified query expression syntax is not valid.</Message><BoxUsage>0.0000137200</BoxUsage></Error></Errors><RequestID>d20350c0-e453-3429-0461-24dc4bf135ed</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:20:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.7ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 14:51:34) [GET]
+
+RAWS::HTTP::Error (code=400,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InvalidQueryExpression</Code><Message>The specified query expression syntax is not valid.</Message><BoxUsage>0.0000137200</BoxUsage></Error></Errors><RequestID>03277164-e40d-345d-752a-1e1f2add71c5</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:20:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 15:10:45) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1827ms (View: 138, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 15:38:54) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 1647ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:39:04) [GET]
+
+NoMethodError (undefined method `schema' for SearchTerm:Class):
+  app/models/search_term.rb:5
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-13 15:44:32) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1032ms (View: 38, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#edit (for 127.0.0.1 at 2011-06-13 15:44:34) [GET]
+  Parameters: {"id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}
+Rendering template within layouts/categories
+Rendering categories/edit
+Completed in 279ms (View: 11, DB: 0) | 200 OK [http://localhost/categories/3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:45:31) [GET]
+
+NoMethodError (undefined method `all' for SearchTerm:Class):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (106.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:47:16) [GET]
+
+NoMethodError (undefined method `all' for SearchTerm:Class):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:47:17) [GET]
+
+NoMethodError (undefined method `all' for SearchTerm:Class):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (117.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:47:47) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 235ms (View: 10, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:50:22) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 230ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:50:40) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 244ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:50:49) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 234ms (View: 6, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 15:51:11) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 15:51:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"earthquake"}}
+Redirected to http://localhost:3000/search_terms/13024621319801350217982730815411710807124951152954265484280475947909064926924331339768834483808198769434587794944252508974994017938605136442738644050364673
+Completed in 441ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#show (for 127.0.0.1 at 2011-06-13 15:51:17) [GET]
+  Parameters: {"id"=>"13024621319801350217982730815411710807124951152954265484280475947909064926924331339768834483808198769434587794944252508974994017938605136442738644050364673"}
+
+ActiveResource::ResourceNotFound (Failed with 404 Not Found ):
+  app/controllers/search_terms_controller.rb:16:in `show'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:52:34) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 470ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#show (for 127.0.0.1 at 2011-06-13 15:52:38) [GET]
+  Parameters: {"id"=>"13024621319801350217982730815411710807124951152954265484280475947909064926924331339768834483808198769434587794944252508974994017938605136442738644050364673"}
+Rendering template within layouts/search_terms
+Rendering search_terms/show
+Completed in 262ms (View: 6, DB: 0) | 200 OK [http://localhost/search_terms/13024621319801350217982730815411710807124951152954265484280475947909064926924331339768834483808198769434587794944252508974994017938605136442738644050364673]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:52:44) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 461ms (View: 6, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 15:52:46) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 15:52:54) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"j_j_help_me"}}
+Redirected to http://localhost:3000/search_terms/6429127950431605724039266716021725596921422836556255098119926781079385313645213851678769338137451237982077050786394855889333088046923005593954068518266335
+Completed in 399ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#show (for 127.0.0.1 at 2011-06-13 15:52:55) [GET]
+  Parameters: {"id"=>"6429127950431605724039266716021725596921422836556255098119926781079385313645213851678769338137451237982077050786394855889333088046923005593954068518266335"}
+
+ActiveResource::ResourceNotFound (Failed with 404 Not Found ):
+  app/controllers/search_terms_controller.rb:16:in `show'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (109.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#show (for 127.0.0.1 at 2011-06-13 15:53:33) [GET]
+  Parameters: {"id"=>"6429127950431605724039266716021725596921422836556255098119926781079385313645213851678769338137451237982077050786394855889333088046923005593954068518266335"}
+Rendering template within layouts/search_terms
+Rendering search_terms/show
+Completed in 232ms (View: 3, DB: 0) | 200 OK [http://localhost/search_terms/6429127950431605724039266716021725596921422836556255098119926781079385313645213851678769338137451237982077050786394855889333088046923005593954068518266335]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:55:39) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 661ms (View: 13, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-13 15:55:43) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"6429127950431605724039266716021725596921422836556255098119926781079385313645213851678769338137451237982077050786394855889333088046923005593954068518266335"}
+Redirected to http://localhost:3000/search_terms
+Completed in 513ms (DB: 0) | 302 Found [http://localhost/search_terms/6429127950431605724039266716021725596921422836556255098119926781079385313645213851678769338137451237982077050786394855889333088046923005593954068518266335]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:55:43) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 534ms (View: 75, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 15:55:46) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 15:57:46) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"teset"}}
+Redirected to http://localhost:3000/search_terms/11445789983253751974238225357328373596406380584199861385475267326472131545917019026979934628010380312590169450240362186889938883037652028960911068225133943
+Completed in 494ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#show (for 127.0.0.1 at 2011-06-13 15:57:47) [GET]
+  Parameters: {"id"=>"11445789983253751974238225357328373596406380584199861385475267326472131545917019026979934628010380312590169450240362186889938883037652028960911068225133943"}
+
+ActiveResource::ResourceNotFound (Failed with 404 Not Found ):
+  app/controllers/search_terms_controller.rb:16:in `show'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-13 15:57:56) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1236ms (View: 12, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#new (for 127.0.0.1 at 2011-06-13 15:57:59) [GET]
+Rendering template within layouts/categories
+Rendering categories/new
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://localhost/categories/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#create (for 127.0.0.1 at 2011-06-13 15:58:02) [POST]
+  Parameters: {"category"=>{"new_name"=>"testes"}, "commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8="}
+Redirected to http://localhost:3000/categories/7572176355720260820331616166904746044210135624936713192511367503566435062142880011350456617966097433623704951443874467291172976886309556664184561292836523
+Completed in 424ms (DB: 0) | 302 Found [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#show (for 127.0.0.1 at 2011-06-13 15:58:02) [GET]
+  Parameters: {"id"=>"7572176355720260820331616166904746044210135624936713192511367503566435062142880011350456617966097433623704951443874467291172976886309556664184561292836523"}
+
+ActiveResource::ResourceNotFound (Failed with 404 Not Found ):
+  app/controllers/categories_controller.rb:16:in `show'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-13 15:58:08) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1294ms (View: 15, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#destroy (for 127.0.0.1 at 2011-06-13 15:58:14) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"7572176355720260820331616166904746044210135624936713192511367503566435062142880011350456617966097433623704951443874467291172976886309556664184561292836523"}
+Redirected to http://localhost:3000/categories
+Completed in 560ms (DB: 0) | 302 Found [http://localhost/categories/7572176355720260820331616166904746044210135624936713192511367503566435062142880011350456617966097433623704951443874467291172976886309556664184561292836523]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-13 15:58:15) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1083ms (View: 14, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:58:23) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 761ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:58:49) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 755ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-13 15:58:53) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"11445789983253751974238225357328373596406380584199861385475267326472131545917019026979934628010380312590169450240362186889938883037652028960911068225133943"}
+Redirected to http://localhost:3000/search_terms
+Completed in 565ms (DB: 0) | 302 Found [http://localhost/search_terms/11445789983253751974238225357328373596406380584199861385475267326472131545917019026979934628010380312590169450240362186889938883037652028960911068225133943]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:58:54) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 776ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 15:58:56) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 15:58:58) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"testst"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 416ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:58:58) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 576ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:59:02) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 1646ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#show (for 127.0.0.1 at 2011-06-13 15:59:21) [GET]
+  Parameters: {"id"=>"7944298543977583251548391309918339581119041656610319330205513572355534629168060120595947232812614586477327300021549352533398071523418083877087575113958487"}
+Rendering template within layouts/search_terms
+Rendering search_terms/show
+Completed in 241ms (View: 2, DB: 0) | 200 OK [http://localhost/search_terms/7944298543977583251548391309918339581119041656610319330205513572355534629168060120595947232812614586477327300021549352533398071523418083877087575113958487]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:59:23) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 696ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-13 15:59:33) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"7944298543977583251548391309918339581119041656610319330205513572355534629168060120595947232812614586477327300021549352533398071523418083877087575113958487"}
+Redirected to http://localhost:3000/search_terms
+Completed in 494ms (DB: 0) | 302 Found [http://localhost/search_terms/7944298543977583251548391309918339581119041656610319330205513572355534629168060120595947232812614586477327300021549352533398071523418083877087575113958487]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 15:59:34) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 669ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:02:02) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 492ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 16:02:04) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 16:02:07) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"google"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 369ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:02:07) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 459ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:02:10) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 801ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 16:02:39) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 16:02:49) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"twitter"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 363ms (DB: 1) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:02:49) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 649ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:02:54) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 939ms (View: 12, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 16:03:25) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 1837ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 16:04:10) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 1798ms (View: 16, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:07:01) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 215ms (View: 1, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 16:07:05) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 16:07:10) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"earthquake"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 380ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:07:10) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 233ms (View: 17, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:07:13) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 455ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:13:45) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 525ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:21:46) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/fields_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (117.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:23:00) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 251ms (View: 10, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-13 16:23:02) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-13 16:23:33) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"address"}}
+Redirected to http://localhost:3000/fields/1612085876094080852221211565293625501832798180947435117408600940211469933341017020457417305410728420245793122234964574087751695347829835260749429608510244
+Completed in 385ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#show (for 127.0.0.1 at 2011-06-13 16:23:33) [GET]
+  Parameters: {"id"=>"1612085876094080852221211565293625501832798180947435117408600940211469933341017020457417305410728420245793122234964574087751695347829835260749429608510244"}
+
+ActiveResource::ResourceNotFound (Failed with 404 Not Found ):
+  app/controllers/fields_controller.rb:16:in `show'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:24:07) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+
+ActionView::TemplateError (undefined method `name' for #<Field:0x1033a1a98>) on line #10 of app/views/fields/index.html.erb:
+7: 
+8: <% @fields.each do |field| %>
+9:   <tr>
+10:     <td><%=h field.name %></td>
+11:     <td><%= link_to 'Show', field %></td>
+12:     <td><%= link_to 'Edit', edit_field_path(field) %></td>
+13:     <td><%= link_to 'Destroy', field, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/fields/index.html.erb:10
+    app/views/fields/index.html.erb:8:in `each'
+    app/views/fields/index.html.erb:8
+    app/controllers/fields_controller.rb:7:in `index'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (136.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:24:16) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+
+ActionView::TemplateError (undefined method `name' for #<Field:0x1035eeb48>) on line #10 of app/views/fields/index.html.erb:
+7: 
+8: <% @fields.each do |field| %>
+9:   <tr>
+10:     <td><%=h field.name %></td>
+11:     <td><%= link_to 'Show', field %></td>
+12:     <td><%= link_to 'Edit', edit_field_path(field) %></td>
+13:     <td><%= link_to 'Destroy', field, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/fields/index.html.erb:10
+    app/views/fields/index.html.erb:8:in `each'
+    app/views/fields/index.html.erb:8
+    app/controllers/fields_controller.rb:7:in `index'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:24:18) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+
+ActionView::TemplateError (undefined method `name' for #<Field:0x102efa7b0>) on line #10 of app/views/fields/index.html.erb:
+7: 
+8: <% @fields.each do |field| %>
+9:   <tr>
+10:     <td><%=h field.name %></td>
+11:     <td><%= link_to 'Show', field %></td>
+12:     <td><%= link_to 'Edit', edit_field_path(field) %></td>
+13:     <td><%= link_to 'Destroy', field, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/fields/index.html.erb:10
+    app/views/fields/index.html.erb:8:in `each'
+    app/views/fields/index.html.erb:8
+    app/controllers/fields_controller.rb:7:in `index'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:24:51) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 371ms (View: 2, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-13 16:24:53) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-13 16:25:31) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"address"}}
+Redirected to http://localhost:3000/fields
+Completed in 433ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:25:31) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 579ms (View: 5, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-13 16:25:34) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-13 16:25:40) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"people name"}}
+Redirected to http://localhost:3000/fields
+Completed in 443ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:25:41) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 530ms (View: 5, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-13 16:25:44) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 8ms (View: 5, DB: 0) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-13 16:25:52) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"time"}}
+Redirected to http://localhost:3000/fields
+Completed in 410ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:25:53) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 759ms (View: 9, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:25:56) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1045ms (View: 12, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:49:57) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 967ms (View: 12, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 16:50:01) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2887ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-06-13 16:50:14) [POST]
+  Parameters: {"address"=>"test", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "people name"=>"test", "time"=>"test", "id"=>"80389301887696896"}
+Rendering template within layouts/tweets
+Rendering tweets/detail
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #21 of app/views/tweets/detail.html.erb:
+18: 	<br />
+19: <% form_tag categorize_tweet_path(@tweet.id) do %>
+20:   <%= error_messages_for :tweet %>
+21:   <% @fields.each do |field| %>
+22:   <p>
+23: 	<%= label_tag field.to_sym %><br />
+24:     <%= text_field_tag field.to_sym, nil, :class=>"fieldclass" %>
+
+    app/views/tweets/detail.html.erb:21
+    app/views/tweets/detail.html.erb:19
+    app/controllers/tweets_controller.rb:110:in `categorize'
+    app/controllers/tweets_controller.rb:101:in `categorize'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (55.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:50:42) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 490ms (View: 7, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 16:50:45) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 16:50:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"google"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 458ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:50:49) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 658ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-13 16:50:51) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-13 16:50:59) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"twitter"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 416ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:50:59) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 922ms (View: 13, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-13 16:51:04) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"1119048292430074402553590110067212901433050783241929072221633798257810670690239686243671165364283273991528782042637685227568007196102698262720768469418433"}
+Redirected to http://localhost:3000/search_terms
+Completed in 522ms (DB: 0) | 302 Found [http://localhost/search_terms/1119048292430074402553590110067212901433050783241929072221633798257810670690239686243671165364283273991528782042637685227568007196102698262720768469418433]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:51:05) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 661ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 16:51:07) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 673ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-06-13 16:52:55) [POST]
+  Parameters: {"address"=>"test", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "people name"=>"test", "time"=>"test", "id"=>"80389301887696896"}
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3611ms (View: 6, DB: 0) | 200 OK [http://localhost/tweets/80389301887696896/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 16:59:17) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 904ms (View: 12, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#edit (for 127.0.0.1 at 2011-06-13 16:59:20) [GET]
+  Parameters: {"id"=>"11840381021482409027431140642046511178097365017927118075998282586788468872986547457126669125626372953804977499052752299241767002642865144125072336094470814"}
+Rendering template within layouts/fields
+Rendering fields/edit
+Completed in 310ms (View: 11, DB: 0) | 200 OK [http://localhost/fields/11840381021482409027431140642046511178097365017927118075998282586788468872986547457126669125626372953804977499052752299241767002642865144125072336094470814/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#update (for 127.0.0.1 at 2011-06-13 16:59:25) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"11840381021482409027431140642046511178097365017927118075998282586788468872986547457126669125626372953804977499052752299241767002642865144125072336094470814", "field"=>{"name"=>"people_name"}}
+
+NoMethodError (undefined method `update_attributes' for #<Field:0x1036bbdc8>):
+  app/controllers/fields_controller.rb:64:in `update'
+  app/controllers/fields_controller.rb:63:in `update'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 17:00:11) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 223ms (View: 1, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 17:29:14) [GET]
+
+REXML::ParseException (#<REXML::ParseException: malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<search-terms_1075759158694478085593441692299558470061824359340687510227075958255>
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:356:in `pull'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `new'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `__send__'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/hash/conversions.rb:164:in `from_xml'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/formats/xml_format.rb:19:in `decode'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/connection.rb:138:in `get'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:642:in `find_every'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:585:in `find'
+/Users/yuzhang/projects/dmisv-tweetparser/DMI-tweets-parser/app/controllers/tweets_controller.rb:5:in `index'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+script/server:3:in `require'
+script/server:3
+...
+malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<search-terms_1075759158694478085593441692299558470061824359340687510227075958255
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<search-terms_1075759158694478085593441692299558470061824359340687510227075958255):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:92:in `parse'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+  app/controllers/tweets_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (117.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 17:29:42) [GET]
+
+REXML::ParseException (#<REXML::ParseException: malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<search-terms_1075759158694478085593441692299558470061824359340687510227075958255>
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:356:in `pull'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `new'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `__send__'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/hash/conversions.rb:164:in `from_xml'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/formats/xml_format.rb:19:in `decode'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/connection.rb:138:in `get'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:642:in `find_every'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:585:in `find'
+/Users/yuzhang/projects/dmisv-tweetparser/DMI-tweets-parser/app/controllers/tweets_controller.rb:5:in `index'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+script/server:3:in `require'
+script/server:3
+...
+malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<search-terms_1075759158694478085593441692299558470061824359340687510227075958255
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<search-terms_1075759158694478085593441692299558470061824359340687510227075958255):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:92:in `parse'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+  app/controllers/tweets_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 17:37:30) [GET]
+
+REXML::ParseException (#<REXML::ParseException: malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<people name></people name>     <id type="integer">80430312043188224</id>     <us>
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:356:in `pull'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `new'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `__send__'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/hash/conversions.rb:164:in `from_xml'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/formats/xml_format.rb:19:in `decode'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/connection.rb:138:in `get'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:642:in `find_every'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:585:in `find'
+/Users/yuzhang/projects/dmisv-tweetparser/DMI-tweets-parser/app/controllers/tweets_controller.rb:5:in `index'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+script/server:3:in `require'
+script/server:3
+...
+malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<people name></people name>     <id type="integer">80430312043188224</id>     <us
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<people name></people name>     <id type="integer">80430312043188224</id>     <us):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:92:in `parse'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+  app/controllers/tweets_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 17:38:50) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1412ms (View: 12, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#destroy (for 127.0.0.1 at 2011-06-13 17:38:57) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"11840381021482409027431140642046511178097365017927118075998282586788468872986547457126669125626372953804977499052752299241767002642865144125072336094470814"}
+Redirected to http://localhost:3000/fields
+Completed in 545ms (DB: 0) | 302 Found [http://localhost/fields/11840381021482409027431140642046511178097365017927118075998282586788468872986547457126669125626372953804977499052752299241767002642865144125072336094470814]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 17:38:58) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1004ms (View: 9, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-13 17:39:02) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 50ms (View: 47, DB: 0) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-13 17:39:07) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"people_name"}}
+Redirected to http://localhost:3000/fields
+Completed in 419ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 17:39:07) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1193ms (View: 12, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 17:39:32) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 3529ms (View: 21, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 17:39:54) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3501ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-13 17:40:12) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1315ms (View: 12, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 17:40:16) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 3413ms (View: 21, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 17:40:24) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 3183ms (View: 21, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 18:01:46) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 3162ms (View: 21, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 18:01:57) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3052ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 18:02:16) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1023ms (View: 12, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-13 18:02:21) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 66ms (View: 63, DB: 0) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-13 18:02:25) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"testt"}}
+Redirected to http://localhost:3000/fields
+Completed in 474ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 18:02:25) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1236ms (View: 15, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 18:02:32) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2629ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-06-13 18:02:52) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "time"=>"", "testt"=>"", "id"=>"80437801816035328", "people_name"=>""}
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 4943ms (View: 7, DB: 0) | 200 OK [http://localhost/tweets/80437801816035328/categorize]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-06-13 18:03:03) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "time"=>"", "testt"=>"", "id"=>"80437801816035328", "people_name"=>""}
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 5565ms (View: 7, DB: 0) | 200 OK [http://localhost/tweets/80437801816035328/categorize]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-13 18:04:22) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 3197ms (View: 25, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 18:04:30) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2565ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#categorize (for 127.0.0.1 at 2011-06-13 18:04:35) [POST]
+  Parameters: {"address"=>"", "category"=>{"category_id"=>"3924483227238221101029897179653015220266888070694540161276542048016501532361731091618595689071836429890481705697579808169048505253965148409793344468229805"}, "commit"=>"Categorize", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "time"=>"", "testt"=>"", "id"=>"80437799228149760", "people_name"=>""}
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 4595ms (View: 6, DB: 0) | 200 OK [http://localhost/tweets/80437799228149760/categorize]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-13 18:37:24) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1306ms (View: 16, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 18:37:34) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3527ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:11:16) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3687ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:11:23) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2781ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:11:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2592ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:39:29) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3191ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:39:35) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2859ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:39:39) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2614ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:39:43) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2676ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:39:46) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2602ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 20:39:50) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2606ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
