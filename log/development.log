@@ -9021,3 +9021,1836 @@ Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 21:11:38) [GET]
 Rendering template within layouts/tweets
 Rendering tweets/detail
 Completed in 3600ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 21:43:23) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>d604ba77-e242-4dee-7a33-2101adb85b25</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  raws (0.0.11) lib/raws/sdb.rb:66:in `select'
+  raws (0.0.11) lib/raws/sdb/select.rb:20:in `each'
+  app/models/tweet.rb:16:in `first'
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 21:43:35) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>b659069f-7d3b-e4d3-b19e-3ed8872c4305</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:20:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 21:43:39) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>67cf7dbd-3a57-4eb4-ff23-c1d1d9aa3cf8</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  raws (0.0.11) lib/raws/sdb.rb:66:in `select'
+  raws (0.0.11) lib/raws/sdb/select.rb:20:in `each'
+  app/models/tweet.rb:16:in `first'
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (124.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 21:51:04) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>7d30403a-d47a-8f30-557f-470abbbfb796</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  raws (0.0.11) lib/raws/sdb.rb:66:in `select'
+  raws (0.0.11) lib/raws/sdb/select.rb:20:in `each'
+  app/models/tweet.rb:16:in `first'
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 21:51:08) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>8639a7ff-25ca-f902-36b5-09ca91dfcfb5</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  raws (0.0.11) lib/raws/sdb.rb:66:in `select'
+  raws (0.0.11) lib/raws/sdb/select.rb:20:in `each'
+  app/models/tweet.rb:16:in `first'
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 21:55:34) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 824ms (View: 37, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-13 21:55:37) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/categories_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (73.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-13 22:04:44) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/categories_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:04:48) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:04:51) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:04:54) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:04:56) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:04:58) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 22:07:10) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>81eae777-1f37-ef26-56d8-4a7df1ae930f</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  raws (0.0.11) lib/raws/sdb.rb:66:in `select'
+  raws (0.0.11) lib/raws/sdb/select.rb:20:in `each'
+  app/models/tweet.rb:16:in `first'
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:33:00) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (115.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:33:02) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:33:03) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (112.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:44:49) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:44:51) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:58:27) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-13 22:58:31) [GET]
+
+ActiveResource::ServerError (Failed with 503 Service Unavailable ):
+  app/controllers/search_terms_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 22:58:35) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>7771347e-ec82-00df-e45b-4ae589792c24</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  raws (0.0.11) lib/raws/sdb.rb:66:in `select'
+  raws (0.0.11) lib/raws/sdb/select.rb:20:in `each'
+  app/models/tweet.rb:16:in `first'
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 23:16:33) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>a299ea01-1403-fa94-d839-b39cefd6fd5b</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:20:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 23:16:44) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>905e2fc4-75ee-a5c6-1a08-de239c29baa7</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:20:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 23:16:50) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>c09caba2-5e76-f5db-6607-87d0864b61c5</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  raws (0.0.11) lib/raws/sdb.rb:66:in `select'
+  raws (0.0.11) lib/raws/sdb/select.rb:20:in `each'
+  app/models/tweet.rb:16:in `first'
+  app/models/tweet.rb:16:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 23:16:52) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>eed8cdd1-d81a-b7cb-ac67-947defeb89ed</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:20:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (39.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-13 23:16:57) [GET]
+
+RAWS::HTTP::Error (code=500,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InternalError</Code><Message>Request could not be executed due to an internal service error</Message></Error></Errors><RequestID>46be0481-1e2f-c647-9208-c6f119b989ca</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:24:in `get_random_unparsed_tweet'
+  app/controllers/tweets_controller.rb:85:in `detail'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 01:27:07) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3755ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 01:27:23) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2728ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 01:27:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2752ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 01:27:30) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2526ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 01:27:33) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2595ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 01:27:37) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2501ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 01:27:41) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 2559ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 16:08:18) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 5342ms (View: 83, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 16:08:26) [GET]
+
+REXML::ParseException (#<REXML::ParseException: malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<Number of people affected></Number of people affected>   </tweet>   <tweet>     >
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/baseparser.rb:356:in `pull'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:22:in `parse'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `new'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini/rexml.rb:17:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `__send__'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/xml_mini.rb:12:in `parse'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/hash/conversions.rb:164:in `from_xml'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/formats/xml_format.rb:19:in `decode'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/connection.rb:138:in `get'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:642:in `find_every'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activeresource-2.3.8/lib/active_resource/base.rb:585:in `find'
+/Users/yuzhang/projects/dmisv-tweetparser/DMI-tweets-parser/app/controllers/tweets_controller.rb:5:in `index'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/head.rb:9:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/methodoverride.rb:24:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `synchronize'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/lock.rb:11:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:47:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `each'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/urlmap.rb:41:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/content_length.rb:13:in `call'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:48:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rack-1.1.2/lib/rack/handler/webrick.rb:14:in `run'
+/Users/yuzhang/.rvm/gems/ruby-1.8.7-p302@dmitweetsparser/gems/rails-2.3.8/lib/commands/server.rb:111
+script/server:3:in `require'
+script/server:3
+...
+malformed XML: missing tag start
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<Number of people affected></Number of people affected>   </tweet>   <tweet>     
+Line: 
+Position: 
+Last 80 unconsumed characters:
+<Number of people affected></Number of people affected>   </tweet>   <tweet>     ):
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/parsers/treeparser.rb:92:in `parse'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:227:in `build'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/rexml/document.rb:43:in `initialize'
+  app/controllers/tweets_controller.rb:5:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.1ms)
+Rendered rescues/_request_and_response (77.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 16:15:15) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 5045ms (View: 52, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 16:15:22) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1421ms (View: 71, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-14 16:15:26) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 273ms (View: 270, DB: 0) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-14 16:17:28) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"number of people    affected"}}
+Redirected to http://localhost:3000/fields
+Completed in 515ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 16:17:28) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1188ms (View: 45, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 16:17:33) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1375ms (View: 19, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 16:18:11) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 4392ms (View: 106, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 16:18:20) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3623ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 16:21:00) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1535ms (View: 128, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 16:21:02) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1288ms (View: 21, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 16:21:20) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 4793ms (View: 107, DB: 1) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 16:21:25) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 4885ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 16:21:39) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3369ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 16:25:36) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 5193ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 16:31:19) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1142ms (View: 51, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 16:31:24) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 4345ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 16:31:30) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1165ms (View: 15, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 16:31:43) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3588ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:31:54) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 1288ms (View: 145, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-14 16:32:23) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"9587563488878181388578287121414451128957261242784300203817800870110317005054247070085219710076444362653411729405347775735573833811683899244273046568801216"}
+Redirected to http://localhost:3000/search_terms
+Completed in 555ms (DB: 0) | 302 Found [http://localhost/search_terms/9587563488878181388578287121414451128957261242784300203817800870110317005054247070085219710076444362653411729405347775735573833811683899244273046568801216]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:32:24) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 1249ms (View: 12, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:32:29) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 891ms (View: 13, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 16:32:45) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1402ms (View: 40, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:32:50) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 1008ms (View: 12, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (20.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 16:32:54) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1269ms (View: 42, DB: 20) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 16:32:56) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 4734ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 16:33:13) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1405ms (View: 17, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:33:30) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 926ms (View: 12, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-14 16:35:50) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"7699702686134190685959211855697394675806673351179775619782814117611583252165808032163556648047806604664891128535282287917196541570382549761327855266661787"}
+Redirected to http://localhost:3000/search_terms
+Completed in 706ms (DB: 0) | 302 Found [http://localhost/search_terms/7699702686134190685959211855697394675806673351179775619782814117611583252165808032163556648047806604664891128535282287917196541570382549761327855266661787]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:35:51) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 1022ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-14 16:35:53) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"10757591586944780855934416922995584700618243593406875102270759582551390590807059682152390040986120275923017848069222228683346414627194151154330480775697362"}
+Redirected to http://localhost:3000/search_terms
+Completed in 573ms (DB: 0) | 302 Found [http://localhost/search_terms/10757591586944780855934416922995584700618243593406875102270759582551390590807059682152390040986120275923017848069222228683346414627194151154330480775697362]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:35:54) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 739ms (View: 8, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-14 16:35:56) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"3633739150005610817645390794626743050578533515879639756730400742160376006680312410867044725795748141263936649762508960792419887396934435745314705418877129"}
+Redirected to http://localhost:3000/search_terms
+Completed in 569ms (DB: 0) | 302 Found [http://localhost/search_terms/3633739150005610817645390794626743050578533515879639756730400742160376006680312410867044725795748141263936649762508960792419887396934435745314705418877129]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:35:57) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 321ms (View: 2, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-14 16:36:21) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 178ms (View: 175, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-14 16:36:30) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"google"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 490ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:36:30) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 256ms (View: 1, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:36:33) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 587ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-14 16:36:36) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-14 16:37:16) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"facebook jobs"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 356ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:37:17) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 457ms (View: 6, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:37:22) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 639ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-14 16:39:59) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:40:18) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 733ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-14 16:40:22) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"6614969094544663044485358577840147098677507053866816433034566929084653854365121467983676030688704295357795393876695203491442727987411368713634212901833462"}
+Redirected to http://localhost:3000/search_terms
+Completed in 493ms (DB: 0) | 302 Found [http://localhost/search_terms/6614969094544663044485358577840147098677507053866816433034566929084653854365121467983676030688704295357795393876695203491442727987411368713634212901833462]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:40:23) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 465ms (View: 6, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-14 16:40:25) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-14 16:40:34) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"jobs google"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 363ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:40:34) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 512ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-14 16:40:37) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#create (for 127.0.0.1 at 2011-06-14 16:40:43) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "search_term"=>{"new_name"=>"facebook"}}
+Redirected to http://localhost:3000/search_terms
+Completed in 410ms (DB: 0) | 302 Found [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:40:43) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 706ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:40:48) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 838ms (View: 12, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#destroy (for 127.0.0.1 at 2011-06-14 16:41:30) [DELETE]
+  Parameters: {"authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "id"=>"5645364615626015424502880907789726643496117643100347053088812812047104153320817283059835109370472862423584995398247644118074152716882997502053565561441370"}
+Redirected to http://localhost:3000/search_terms
+Completed in 502ms (DB: 0) | 302 Found [http://localhost/search_terms/5645364615626015424502880907789726643496117643100347053088812812047104153320817283059835109370472862423584995398247644118074152716882997502053565561441370]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:41:31) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 649ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#new (for 127.0.0.1 at 2011-06-14 16:43:44) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/new
+Completed in 137ms (View: 132, DB: 0) | 200 OK [http://localhost/search_terms/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 16:44:35) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 777ms (View: 9, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 16:44:39) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1363ms (View: 16, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 16:44:46) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 2528ms (View: 42, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 16:45:17) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1288ms (View: 15, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 17:04:35) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 29022ms (View: 326, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 19:17:05) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 28482ms (View: 415, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (30.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (32.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 22:53:30) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1848ms (View: 105, DB: 62) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#new (for 127.0.0.1 at 2011-06-14 22:53:35) [GET]
+Rendering template within layouts/fields
+Rendering fields/new
+Completed in 26ms (View: 23, DB: 13) | 200 OK [http://localhost/fields/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#create (for 127.0.0.1 at 2011-06-14 22:53:48) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"dbvd+BXiJr0PoYcLjaTqcKHqq+HsqKlOc/BaIHSTea8=", "field"=>{"new_name"=>"some thing to test"}}
+Redirected to http://localhost:3000/fields
+Completed in 490ms (DB: 0) | 302 Found [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 22:53:48) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 1440ms (View: 19, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing FieldsController#index (for 127.0.0.1 at 2011-06-14 22:54:51) [GET]
+Rendering template within layouts/fields
+Rendering fields/index
+Completed in 3055ms (View: 21, DB: 0) | 200 OK [http://localhost/fields]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SearchTermsController#index (for 127.0.0.1 at 2011-06-14 22:54:57) [GET]
+Rendering template within layouts/search_terms
+Rendering search_terms/index
+Completed in 1089ms (View: 47, DB: 0) | 200 OK [http://localhost/search_terms]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 22:55:01) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1753ms (View: 38, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CategoriesController#index (for 127.0.0.1 at 2011-06-14 22:55:22) [GET]
+Rendering template within layouts/categories
+Rendering categories/index
+Completed in 1746ms (View: 20, DB: 0) | 200 OK [http://localhost/categories]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 22:55:25) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 7280ms (View: 99, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 22:56:58) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3295ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 22:57:05) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3376ms (View: 5, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 23:02:02) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3894ms (View: 9, DB: 0) | 200 OK [http://localhost/tweets/detail]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 23:02:24) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 3219ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#detail (for 127.0.0.1 at 2011-06-14 23:51:20) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/detail
+Completed in 5368ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:51:26) [GET]
+
+RAWS::HTTP::Error (code=400,body=<?xml version="1.0"?>
+<Response><Errors><Error><Code>InvalidParameterValue</Code><Message>Value (0) for parameter MaxNumberOfItems is invalid. MaxNumberOfItems must be between 1 and 2500</Message><BoxUsage>0.0000137200</BoxUsage></Error></Errors><RequestID>f1733ffc-7b90-983b-fc82-3b0835b57d5b</RequestID></Response>):
+  raws (0.0.11) lib/raws/http/typhoeus.rb:58:in `send'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:65:in `connect'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `call'
+  raws (0.0.11) lib/raws/http/typhoeus.rb:8:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:61:in `connect'
+  raws (0.0.11) lib/raws/sdb/adapter.rb:192:in `select'
+  app/models/tweet.rb:22:in `find_with_pagenation'
+  app/controllers/tweets_controller.rb:9:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (111.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:52:28) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/models/tweet.rb:24:in `find_with_pagenation'
+  app/controllers/tweets_controller.rb:9:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (36.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:52:59) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 415ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:53:17) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 348ms (View: 34, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:54:25) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 337ms (View: 48, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:54:52) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 452ms (View: 58, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (4.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:55:21) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 352ms (View: 32, DB: 5) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:57:02) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 570ms (View: 31, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:57:42) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 398ms (View: 39, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:57:54) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 337ms (View: 37, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:58:27) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 328ms (View: 36, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:58:36) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 401ms (View: 31, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:58:40) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 327ms (View: 30, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:59:06) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 392ms (View: 35, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:59:09) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 418ms (View: 31, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:59:12) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 327ms (View: 31, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:59:16) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 387ms (View: 31, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-14 23:59:19) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 395ms (View: 31, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:00:15) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 348ms (View: 32, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:00:26) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 438ms (View: 33, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:01:02) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 406ms (View: 44, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:01:06) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 335ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:01:09) [GET]
+  Parameters: {"page"=>"29"}
+
+NoMethodError (undefined method `-' for "29":String):
+  app/models/tweet.rb:22:in `find_with_pagenation'
+  app/controllers/tweets_controller.rb:10:in `index'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /Users/yuzhang/.rvm/rubies/ruby-1.8.7-p302/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (38.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:02:04) [GET]
+  Parameters: {"page"=>"29"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 521ms (View: 110, DB: 0) | 200 OK [http://localhost/tweets?page=29]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:02:09) [GET]
+  Parameters: {"page"=>"25"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 483ms (View: 37, DB: 0) | 200 OK [http://localhost/tweets?page=25]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:02:12) [GET]
+  Parameters: {"page"=>"21"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 533ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets?page=21]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:02:14) [GET]
+  Parameters: {"page"=>"16"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 654ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets?page=16]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:02:19) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 323ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:02:22) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 420ms (View: 38, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:02:24) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 400ms (View: 39, DB: 1) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:03:16) [GET]
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 338ms (View: 44, DB: 0) | 200 OK [http://localhost/tweets]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:03:19) [GET]
+  Parameters: {"page"=>"13"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 503ms (View: 38, DB: 1) | 200 OK [http://localhost/tweets?page=13]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:03:21) [GET]
+  Parameters: {"page"=>"12"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 525ms (View: 39, DB: 0) | 200 OK [http://localhost/tweets?page=12]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:03:24) [GET]
+  Parameters: {"page"=>"11"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 567ms (View: 107, DB: 0) | 200 OK [http://localhost/tweets?page=11]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:03:36) [GET]
+  Parameters: {"page"=>"10"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 473ms (View: 38, DB: 1) | 200 OK [http://localhost/tweets?page=10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2011-06-15 00:03:38) [GET]
+  Parameters: {"page"=>"9"}
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 517ms (View: 39, DB: 0) | 200 OK [http://localhost/tweets?page=9]

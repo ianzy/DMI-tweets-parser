@@ -2,7 +2,12 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.xml
   def index
-    @tweets = Tweet.find(:all)
+    @pages = Tweet.pages
+    page = params[:page].to_i
+    puts "-------------------------------------------#{params[:page]}"
+    page = 1 if params[:page].nil? || !params[:page].scan(/[^0-9]/).empty?
+    @current_page = page
+    @tweets = Tweet.find_with_pagenation page
 
     respond_to do |format|
       format.html # index.html.erb
@@ -92,7 +97,7 @@ class TweetsController < ApplicationController
     @tweet = Tweet.find(params[:id])
     
     Field.find(:all).map(&:name).each do |field|
-      @tweet.send "#{field}=", params[field.to_sym] if @tweet.respond_to? "#{field}="
+      @tweet.send "#{field}=", params[field.to_sym].strip if @tweet.respond_to? "#{field}="
     end
     
     @tweet.category = params[:category][:category_id]

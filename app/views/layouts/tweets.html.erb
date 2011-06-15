@@ -17,12 +17,11 @@
     </div>
       <div id="navigation">
         <ul>
+			<li><%= link_to "Home", root_path %></li>
           	<li><%= link_to "<span>Tweets</span>", tweets_path, :class=>"active" %></li>
 		      <li><%= link_to "<span>Categories</span>", categories_path %></li>
 	          <li><%= link_to "<span>Search keywords</span>", search_terms_path %></li>
 	          <li><%= link_to "<span>Fields</span>", fields_path %></li>
-          </li>
-          <li><a href="#"><span>Contact Us</span></a>
           </li>
         </ul>
         <!-- <a href="#" class="buy-now">Map</a> -->

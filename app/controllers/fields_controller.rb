@@ -40,7 +40,7 @@ class FieldsController < ApplicationController
   # POST /fields
   # POST /fields.xml
   def create
-    params[:field][:name] = params[:field][:new_name]
+    params[:field][:name] = params[:field][:new_name].strip.gsub(/\s+/,"_")
     params[:field].delete :new_name
     @field = Field.new(params[:field])
 

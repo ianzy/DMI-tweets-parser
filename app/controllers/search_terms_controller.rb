@@ -40,7 +40,7 @@ class SearchTermsController < ApplicationController
   # POST /search_terms
   # POST /search_terms.xml
   def create
-    params[:search_term][:name] = params[:search_term][:new_name]
+    params[:search_term][:name] = params[:search_term][:new_name].strip
     params[:search_term].delete :new_name
     @search_term = SearchTerm.new(params[:search_term])
 

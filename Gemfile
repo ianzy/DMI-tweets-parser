@@ -2,7 +2,6 @@ source 'http://rubygems.org'
 
 gem 'rails', '2.3.8'
 gem 'bundler'
-gem "sqlite3-ruby", :require => "sqlite3"
 gem 'mysql'
 gem 'aws-sdb'
 gem 'raws'
@@ -12,6 +11,7 @@ gem 'raws'
 # gem "geokit"
 
 group :development do
+	gem "sqlite3-ruby", :require => "sqlite3"
   # bundler requires these gems in development
   # gem "rails-footnotes"
 end

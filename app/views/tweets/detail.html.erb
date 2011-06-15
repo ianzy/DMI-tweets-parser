@@ -19,12 +19,10 @@
 <% form_tag categorize_tweet_path(@tweet.id) do %>
   <%= error_messages_for :tweet %>
   <% @fields.each do |field| %>
-	<% if @tweet.respond_to? "#{field}=" %>
   		<p>
 			<%= label_tag "#{field}:" %><br />
     		<%= text_field_tag field.to_sym, nil, :class=>"fieldclass" %>
   		</p>
-	<% end %>
   <% end %>
   <p>
 	<%= label_tag "Category:" %><br />

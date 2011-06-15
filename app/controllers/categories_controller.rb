@@ -40,7 +40,7 @@ class CategoriesController < ApplicationController
   # POST /categories
   # POST /categories.xml
   def create
-    params[:category][:name] = params[:category][:new_name]
+    params[:category][:name] = params[:category][:new_name].strip
     params[:category].delete :new_name 
     @category = Category.new(params[:category])
 

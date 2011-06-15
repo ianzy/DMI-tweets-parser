@@ -20,5 +20,10 @@
 </div>
 <% end %>
 <br />
-
+<%= link_to("<< prev ", tweets_path(:page=>@current_page-1) ) if @current_page > 1%>
+<% 1.upto(@pages) do |page| %>
+	<%= link_to "#{page}", tweets_path(:page=>page) %>
+<% end %>
+<%= link_to(" next >>", tweets_path(:page=>@current_page+1) ) if @current_page < @pages%>
+<br />
 <%= link_to 'New tweet', new_tweet_path %>
